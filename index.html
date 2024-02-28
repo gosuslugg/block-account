@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блокировка аккаунта Госуслуг</title>
+    <style>
+        /* Стили для центрирования и оформления текста */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #eaf3f9; /* Цвет заднего фона */
+            position: relative; /* Добавляем позиционирование для добавления элементов поверх верхней полоски */
+        }
+        .top-bar, .bottom-bar {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background: linear-gradient(to right, #007bff, #0099ff); /* Градиент синего цвета */
+        }
+        .top-bar {
+            top: 0;
+        }
+        .bottom-bar {
+            bottom: 0;
+        }
+        .container {
+            text-align: center;
+            z-index: 1; /* Устанавливаем z-index, чтобы контейнер был выше полосок */
+        }
+        .frame {
+            border: 1px solid #000;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 300px;
+            background-color: #fff; /* Цвет фона блока */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Тень вокруг рамки */
+        }
+        img {
+            max-width: 100%;
+            margin-bottom: 10px; /* Переместим картинку ниже текста */
+            margin-top: 10px; /* Опустим картинку на 10px */
+        }
+        .navigation-buttons {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+            z-index: 2; /* Устанавливаем z-index, чтобы кнопки были выше остальных элементов */
+        }
+        .navigation-buttons a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 5px 10px; /* Отступы для кнопок */
+            border: 1px solid #007bff; /* Рамка для кнопок */
+            border-radius: 5px; /* Скругление углов */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тень вокруг кнопок */
+        }
+        .telegram-logo, .viber-logo {
+            position: absolute;
+            bottom: 10px;
+            z-index: 2; /* Устанавливаем z-index, чтобы логотип был выше остальных элементов */
+        }
+        .telegram-logo {
+            left: 10px;
+            width: 160px; /* Увеличиваем размер логотипа */
+        }
+        .viber-logo {
+            right: 10px;
+            width: 160px; /* Увеличиваем размер логотипа */
+        }
+        .copyright {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            color: #333; /* Цвет текста */
+            font-size: 14px; /* Размер шрифта */
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar"></div>
+    <div class="container">
+        <div class="frame">
+            <img src="https://фондкругдобра.рф/wp-content/uploads/2021/12/Gosuslugi_logo.png" alt="Госуслуги" />
+            <h2>Ваш аккаунт Госуслуг заблокирован</h2>
+            <p>Обратитесь в контактный центр по номеру:</p>
+            <p><a href="tel:+74996880636">+ 7 (499) 688 06 36</a></p>
+        </div>
+    </div>
+    <div class="navigation-buttons">
+        <a href="https://www.gosuslugi.ru/">Услуги</a>
+        <a href="https://lk.gosuslugi.ru/profile">Документы</a>
+        <a href="https://esia.gosuslugi.ru/login/">Заявления</a>
+        <a href="https://www.gosuslugi.ru/pay">Платежи</a>
+        <a href="https://www.gosuslugi.ru/help">Помощь</a>
+    </div>
+    <a href="https://t.me/+79774039705"><img class="telegram-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/2048px-Telegram_logo.svg.png" alt="Telegram Logo"></a>
+    <a href="https://chat.viber.com/"><img class="viber-logo" src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Viber_logo_2018_%28without_text%29.svg"></a>
+    <div class="copyright">Copyright by ЕСИА</div>
+</body>
+</html>
